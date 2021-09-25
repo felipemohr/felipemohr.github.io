@@ -304,7 +304,27 @@ section .title::after{
 }
 
 /* skills section styling */
-
+@keyframes load{
+    from {
+      width: 0%
+    }
+}
+@-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+}
+@-moz-keyframes load{
+    from {
+      width: 0%
+    }
+}
+@-o-keyframes load{
+    from {
+      width: 0%
+    }
+}
+  
 .skills .title::after{
     content: "what i know";
 }
@@ -327,7 +347,7 @@ section .title::after{
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 40px;
     border: 2px solid maroon;
     transition: all 0.3s ease;
 }
@@ -349,7 +369,7 @@ section .title::after{
     font-size: 18px;
 }
 .skills .skills-content .right .line{
-    height: 5px;
+    height: 8px;
     width: 100%;
     background: lightgrey;
     position: relative;
@@ -361,12 +381,17 @@ section .title::after{
     left: 0;
     top: 0;
     background: maroon;
+    border-radius: 4px;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
 }
 .skills-content .right .cpp::before{
     width: 80%;
 }
 .skills-content .right .python::before{
-    width: 80%;
+    width: 80%; 
 }
 .skills-content .right .ros_gazebo::before{
     width: 70%;
@@ -374,7 +399,7 @@ section .title::after{
 .skills-content .right .computer_vision::before{
     width: 55%;
 }
-.skills-content .right .robotics_simulation::before{
+.skills-content .right .robots_simulation::before{
     width: 85%;
 }
 .skills-content .right .latex::before{
