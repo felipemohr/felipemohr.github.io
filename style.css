@@ -165,7 +165,7 @@ section .title::after{
 /* home section styling */
 .home{
     display: flex;
-    background: url("images/banner.jpg") no-repeat left;
+    background: url("images/background/fundo.png") no-repeat left;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -770,3 +770,25 @@ footer span a:hover{
     opacity: 0;
   }
 }
+
+.home_background{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+}
+.home_background img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img#estrelas
+{
+ mix-blend-mode: screen;   
+}
+
