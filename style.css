@@ -163,9 +163,9 @@ section .title::after{
 
 
 /* home section styling */
-.home{
+/* .home{
     display: flex;
-    background: url("images/background/fundo.png") no-repeat left;
+    background: url("images/background/background.png") no-repeat left;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -173,30 +173,30 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
-.home .max-width{
+section#home .max-width{
   width: 100%;
   display: flex;
 }
-.home .max-width .row{
+section#home .max-width .row{
   margin-right: 0;
 }
-.home .home-content .text-1{
+section#home .home-content .text-1{
     font-size: 27px;
 }
-.home .home-content .text-2{
+section#home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home .home-content .text-3{
+section#home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
-.home .home-content .text-3 span{
+section#home .home-content .text-3 span{
     color: darkorange;
     font-weight: 500;
 }
-.home .home-content a{
+section#home .home-content a{
     display: inline-block;
     background: darkorange;
     color: #fff;
@@ -208,10 +208,10 @@ section .title::after{
     border: 2px solid darkorange;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+section#home .home-content a:hover{
     color: darkorange;
     background: none;
-}
+} */
 
 /* about section styling */
 .about .title::after{
@@ -623,13 +623,13 @@ footer span a:hover{
         margin: 20px 0;
         font-size: 25px;
     }
-    .home .home-content .text-2{
+    section#home .home-content .text-2{
         font-size: 70px;
     }
-    .home .home-content .text-3{
+    section#home .home-content .text-3{
         font-size: 35px;
     }
-    .home .home-content a{
+    section#home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
     }
@@ -662,13 +662,13 @@ footer span a:hover{
     .max-width{
         padding: 0 23px;
     }
-    .home .home-content .text-2{
+    section#home .home-content .text-2{
         font-size: 60px;
     }
-    .home .home-content .text-3{
+    section#home .home-content .text-3{
         font-size: 32px;
     }
-    .home .home-content a{
+    section#home .home-content a{
         font-size: 20px;
     }
     .services .serv-content .card{
@@ -677,10 +677,10 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
-    .home .home-content .text-2{
+    section#home .home-content .text-2{
         font-size: 50px;
     }
-    .home .home-content .text-3{
+    section#home .home-content .text-3{
         font-size: 27px;
     }
     .about .about-content .right .text,
@@ -771,13 +771,13 @@ footer span a:hover{
   }
 }
 
-.home_background{
+section#home{
     position: relative;
     width: 100%;
     height: 100vh;
-    padding: 100px;
+    padding: 100px;    
 }
-.home_background img
+section#home img
 {
     position: absolute;
     top: 0;
@@ -785,10 +785,63 @@ footer span a:hover{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 0;
+}
+section#home{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    background: url("images/background/background.png") no-repeat left;
+}
+section#home .max-width{
+  width: 100%;
+  display: flex;
+}
+section#home .max-width .row{
+  margin-right: 0;
+}
+section#home .home-content{
+    z-index: 10;
+}
+section#home .home-content .text-1{
+    font-size: 27px;
+}
+section#home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+section#home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+section#home .home-content .text-3 span{
+    color: darkorange;
+    font-weight: 500;
+}
+section#home .home-content a{
+    display: inline-block;
+    background: darkorange;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid darkorange;
+    transition: all 0.3s ease;
+}
+section#home .home-content a:hover{
+    color: darkorange;
+    background: none;
 }
 
-img#estrelas
+img#stars
 {
- mix-blend-mode: screen;   
+    mix-blend-mode: screen;
 }
-
