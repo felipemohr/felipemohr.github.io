@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
-        if(this.scrollY > 400){
+        if(this.scrollY > 600){
             $('.navbar').addClass("sticky");
         }else{
             $('.navbar').removeClass("sticky");
@@ -82,10 +82,12 @@ window.addEventListener('scroll', function()
 {
     let value = window.scrollY;
     stars.style.left = -0.4 * value + 'px';
-    if (value <= 175)
+    stars.style.top = 0.6 * value + 'px';
+    if (value <= 500)
     {
-        robots.style.marginTop = 0.5 * value + 'px';
-        fire.style.top = 0.2 * value + 'px';
+        robots.style.marginTop = 0.2 * value + 'px';
+        robots.style.left = 0.1 * value + 'px';
+        fire.style.left = 0.06 * value + 'px';
     }
 
     contact_btn.style.opacity = 100 - 0.3*value + '%';
