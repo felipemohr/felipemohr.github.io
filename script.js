@@ -87,6 +87,7 @@ window.addEventListener('scroll', function()
     stars.style.left = -0.4 * value + 'px';
     stars.style.top = 0.6 * value + 'px';
 
+
     if (value <= 500)
     {   
         robots.style.marginTop = 0.2 * value + 'px';
