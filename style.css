@@ -79,7 +79,7 @@ section .title::after{
 }
 
 /* navbar styling */
-.navbar{
+.navbar-portfolio{
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -87,32 +87,32 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.6s ease;
 }
-.navbar.sticky{
+.navbar-portfolio.sticky{
     padding: 15px 0;
     background: darkorange;
 }
-.navbar .max-width{
+.navbar-portfolio .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
+.navbar-portfolio .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
-.navbar .logo a span{
+.navbar-portfolio .logo a span{
     color: darkorange;
     transition: all 0.3s ease;
 }
-.navbar.sticky .logo a span{
+.navbar-portfolio.sticky .logo a span{
     color: #fff;
 }
-.navbar .menu li{
+.navbar-portfolio .menu li{
     list-style: none;
     display: inline-block;
 }
-.navbar .menu li a{
+.navbar-portfolio .menu li a{
     display: block;
     color: #fff;
     font-size: 18px;
@@ -120,10 +120,10 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+.navbar-portfolio .menu li a:hover{
     color: darkorange;
 }
-.navbar.sticky .menu li a:hover{
+.navbar-portfolio.sticky .menu li a:hover{
     color: #fff;
 }
 
@@ -550,7 +550,7 @@ footer span a:hover{
     .menu-btn i.active:before{
         content: "\f00d";
     }
-    .navbar .menu{
+    .navbar-portfolio .menu{
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -561,13 +561,13 @@ footer span a:hover{
         padding-top: 80px;
         transition: all 0.3s ease;
     }
-    .navbar .menu.active{
+    .navbar-portfolio .menu.active{
         left: 0;
     }
-    .navbar .menu li{
+    .navbar-portfolio .menu li{
         display: block;
     }
-    .navbar .menu li a{
+    .navbar-portfolio .menu li a{
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
@@ -786,4 +786,23 @@ section#home .home-content a{
 section#home .home-content a:hover{
     color: darkorange;
     background: none;
+}
+
+.about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+.about .content ul li {
+    padding-bottom: 10px;
+  }
+  
+.about .content ul i {
+    font-size: 20px;
+    padding-right: 2px;
+    color: darkorange;
+}
+
+.about .content p:last-child {
+    margin-bottom: 0;
 }
