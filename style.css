@@ -31,7 +31,7 @@ html{
 section{
     padding: 100px 0;
 }
-.max-width{
+.max-width-portfolio{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
@@ -91,7 +91,7 @@ section .title::after{
     padding: 15px 0;
     background: darkorange;
 }
-.navbar-portfolio .max-width{
+.navbar-portfolio .max-width-portfolio{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -122,9 +122,11 @@ section .title::after{
 }
 .navbar-portfolio .menu li a:hover{
     color: darkorange;
+    text-decoration: none;
 }
 .navbar-portfolio.sticky .menu li a:hover{
-    color: #fff;
+    color: darkblue;
+    vertical-align: center;
 }
 
 /* menu btn styling */
@@ -538,7 +540,7 @@ footer span a:hover{
 }
 
 @media (max-width: 991px) {
-    .max-width{
+    .max-width-portfolio{
         padding: 0 50px;
     }
 }
@@ -582,7 +584,7 @@ footer span a:hover{
         font-size: 23px;
         padding: 10px 30px;
     }
-    .max-width{
+    .max-width-portfolio{
         max-width: 930px;
     }
     .about .about-content .column{
@@ -608,7 +610,7 @@ footer span a:hover{
 }
 
 @media (max-width: 690px) {
-    .max-width{
+    .max-width-portfolio{
         padding: 0 23px;
     }
     section#home .home-content .text-2{
@@ -745,11 +747,11 @@ section#home img
     object-fit: cover;
     z-index: -1;
 }
-section#home .max-width{
+section#home .max-width-portfolio{
   width: 100%;
   display: flex;
 }
-section#home .max-width .row{
+section#home .max-width-portfolio .row{
   margin-right: 0;
 }
 section#home .home-content{
