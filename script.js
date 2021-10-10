@@ -1,10 +1,10 @@
 $(document).ready(function(){
     $(window).scroll(function(){
         // sticky navbar on scroll script
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
+        if(this.scrollY > 600){
+            $('.navbar-portfolio').addClass("sticky");
         }else{
-            $('.navbar').removeClass("sticky");
+            $('.navbar-portfolio').removeClass("sticky");
         }
         
         // scroll-up button show/hide script
@@ -22,14 +22,14 @@ $(document).ready(function(){
         $('html').css("scrollBehavior", "auto");
     });
 
-    $('.navbar .menu li a').click(function(){
+    $('.navbar-portfolio .menu li a').click(function(){
         // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
     });
 
     // toggle menu/navbar script
     $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
+        $('.navbar-portfolio .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Electrical Engineer (almost)", "Student", "Robotics Lover"],
+        strings: ["Electrical Eng. (almost)", "Student", "Robotics Lover"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -71,3 +71,32 @@ $(document).ready(function(){
         }
     });
 });
+
+let stars = document.getElementById('stars');
+let rock = document.getElementById('rock');
+let fire = document.getElementById('fire');
+let robots = document.getElementById('robots');
+let contact_btn = document.getElementById('contact_btn');
+let txt1 = document.getElementById('txt1');
+let txt2 = document.getElementById('txt2');
+let txt3 = document.getElementById('txt3');
+
+window.addEventListener('scroll', function()
+{
+    let value = window.scrollY;
+    stars.style.left = -0.4 * value + 'px';
+    stars.style.top = 0.6 * value + 'px';
+
+    if (value <= 500)
+    {   
+        robots.style.marginTop = 0.2 * value + 'px';
+        robots.style.left = 0.1 * value + 'px';
+        fire.style.left = 0.06 * value + 'px';
+    }
+
+    txt1.style.right = value + 'px';
+    txt2.style.right = value + 'px';
+    txt3.style.right = value + 'px';
+    contact_btn.style.opacity = 100 - 0.3*value + '%';
+
+})
