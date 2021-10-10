@@ -164,7 +164,7 @@ section .title::after{
 
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "Who i am";
 }
 .about .about-content .left{
     width: 45%;
@@ -218,7 +218,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "what i provide";
+    content: "What I provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -275,7 +275,7 @@ section .title::after{
 }
   
 .skills .title::after{
-    content: "what i know";
+    content: "What I know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -357,7 +357,7 @@ section .title::after{
 
 /* teams section styling */
 .teams .title::after{
-    content: "who with me";
+    content: "Who with me";
 }
 .teams .carousel .card{
     background: #222;
@@ -810,53 +810,67 @@ section#home .home-content a:hover{
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
+
+/* .resume{
+    color:#fff;
+    background: #111;
+}
+
+.resume .title::before{
+    background: #fff;
+} */
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+}
+
+.resume .title::after{
+    content: "What I have done";
+}
+
 .resume .resume-title {
     font-size: 26px;
     font-weight: 700;
     margin-top: 20px;
     margin-bottom: 20px;
-    color: #050d18;
+    color: darkorange;
   }
   
-  .resume .resume-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid #1f5297;
-    position: relative;
-  }
-  
-  .resume .resume-item h4 {
+.resume .resume-item h4 {
     line-height: 18px;
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #050d18;
+    color: darkblue;
     margin-bottom: 10px;
-  }
+}
   
-  .resume .resume-item h5 {
+.resume .resume-item h5 {
     font-size: 16px;
     background: #e4edf9;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
     margin-bottom: 10px;
-  }
+}
   
-  .resume .resume-item ul {
+.resume .resume-item ul {
     padding-left: 20px;
-  }
+}
   
-  .resume .resume-item ul li {
+.resume .resume-item ul li {
     padding-bottom: 10px;
-  }
+}
   
-  .resume .resume-item:last-child {
+.resume .resume-item:last-child {
     padding-bottom: 0;
-  }
+}
   
-  .resume .resume-item::before {
+.resume .resume-item::before {
     content: "";
     position: absolute;
     width: 16px;
@@ -866,5 +880,5 @@ section#home .home-content a:hover{
     top: 0;
     background: #fff;
     border: 2px solid #1f5297;
-  }
+}
   
